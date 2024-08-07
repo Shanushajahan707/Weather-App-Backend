@@ -9,5 +9,5 @@ const port = process.env.port || 3001;
 
 app.use("/user", router);
 app.listen(port, () => {
-  console.log(`Server started at port ${port} `);
+  console.log(`Server started at port ${port} !`);
 });
