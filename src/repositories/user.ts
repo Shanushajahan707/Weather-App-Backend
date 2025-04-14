@@ -99,7 +99,7 @@ export class userRepository implements iUserRespository {
       }
 
       const data = (await response.json()) as OpenWeatherMapResponse;
-
+      console.log('response',data)
       return {
         city: data.name,
         temp: data.main.temp,
